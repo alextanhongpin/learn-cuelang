@@ -54,3 +54,36 @@ defaults:
 
 sumstruct:
 	cue eval sumstruct.cue
+
+bounds:
+	cue eval -i bounds.cue
+
+bounds2:
+	cue eval -i bounds2.cue
+
+lists:
+	cue eval -i lists.cue
+
+templates:
+	cue eval -i templates.cue
+
+scopes:
+	cue eval scopes.cue
+
+selectors:
+	cue eval selectors.cue
+
+alias:
+	cue eval alias.cue
+
+emit:
+	cue eval emit.cue
+
+cycle:
+	cue eval -i -c cycle.cue
+
+cycleref:
+	cue eval cycleref.cue
+
+hidden:
+	cue export hidden.cue

@@ -30,3 +30,27 @@ numbers:
 
 stringlit:
 	cue export stringlit.cue
+
+stringraw:
+	cue eval stringraw.cue
+
+bytes:
+	cue export bytes.cue
+
+structs:
+	cue export -i structs.cue
+
+defs:
+	cue eval -ic defs.cue
+
+structs2:
+	cue eval -c structs2.cue
+
+disjunctions:
+	cue eval disjunctions.cue
+
+defaults:
+	cue eval defaults.cue
+
+sumstruct:
+	cue eval sumstruct.cue

@@ -6,8 +6,8 @@
 }
 
 lossy: #Conn & {
-	address: "1.2.3.4",
-	port: 8888,
-	protocol: "udp",
-	// foo: 2 // uncomment this to get an error
+	address: "1.2.3.4"
+	port: 8888
+	protocol: "udp"
+	// foo: // uncomment this to get an error
 }

@@ -1,4 +1,4 @@
-#rn: >=3 & <8 // type int | float
+#rn: >=3 & <8 // type int and float
 #ri: >=3 & <8 & int // type int
 #rf: >=3 & <=8.0 // type float
 #rs: >="a" & <"mo"
@@ -9,4 +9,4 @@ c: #rf & 3
 d: #rs & "ma"
 e: #rs & "mu"
 
-r1: #rn & >= 5 & <10
+r1: #rn & >=5 & <10

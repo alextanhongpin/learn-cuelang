@@ -1,0 +1,7 @@
+languages:
+  - tag: en
+    name: English
+  - tag: nl
+    name: dutch # Change this to uppercase to fix the error.
+  - tag: no # Change this to "no" to fix the error (it is identified as boolean).
+    name: Norwegian

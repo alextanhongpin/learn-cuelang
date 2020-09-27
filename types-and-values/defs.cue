@@ -1,4 +1,4 @@
-msg: "Hello \(#Name)!"
+msg: "Hello \(#Name)"
 
 #Name: "world"
 

@@ -4,7 +4,7 @@ a: {
 }
 b: {
 	a: {
-		// A provide access to the outer "a" which would
+		// A provides access to the outer "a" which would
 		// otherwise be hidden by the inner one.
 		c: A.d
 	}

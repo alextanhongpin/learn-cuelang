@@ -1,7 +1,0 @@
-languages:
-  - tag: en
-    name: English
-  - tag: nl
-    name: dutch // This will throw an error, convert d to uppercase D.
-  - tag: no // This will throw an error as it will be identified as boolean, change this to "no".
-    name: Norwegian

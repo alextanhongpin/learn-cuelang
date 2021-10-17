@@ -4,9 +4,14 @@ import (
 	"fmt"
 	"strings"
 
+	_ "embed"
+
 	"cuelang.org/go/cue/errors"
 	"cuelang.org/go/cuego"
 )
+
+//go:embed user.cue
+var usercue string
 
 func main() {
 	type Config struct {
@@ -48,6 +53,20 @@ func main() {
 		Filename: "foo.jso",
 		MaxCount: 120,
 		MinCount: 39,
+	})))
+	fmt.Println("")
+
+	type User struct {
+		Name string `json:"name"`
+		Age  int    `json:"age"`
+	}
+
+	err = cuego.Constrain(&User{}, usercue)
+	fmt.Println("error:", errMsg(err))
+
+	fmt.Println("validate:", errMsg(cuego.Validate(&User{
+		Name: "John Doe",
+		Age:  50,
 	})))
 }
 

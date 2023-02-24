@@ -7,11 +7,6 @@ import (
 	"cuelang.org/go/cue/cuecontext"
 )
 
-type User struct {
-	Name string
-	Age  int
-}
-
 func main() {
 	ctx := cuecontext.New()
 	p := ctx.CompileString("a: 2")

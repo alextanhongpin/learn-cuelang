@@ -9,6 +9,7 @@ filetypes:
 
 
 validate:
+	cue vet ranges.cue ranges.json
 	cue vet ranges.json ranges.cue
 	cue vet ranges.json ranges.v2.cue
 	cue vet ranges.json ranges*.cue

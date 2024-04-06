@@ -33,7 +33,17 @@ func main() {
 	// Unify the value with the schema.
 	// Validate the unified value.
 	// Concrete(true) means the value must be concrete (required).
-	fmt.Println(schema.Unify(value).Validate(
+	fmt.Println("JSON", schema.Unify(value).Validate(
+		cue.Concrete(true),
+	))
+
+	// Works with yaml?
+	value = ctx.CompileString(`
+	age: 13
+	name: "john"
+	hobby: ["reading", "coding"]
+	`)
+	fmt.Println("YAML", schema.Unify(value).Validate(
 		cue.Concrete(true),
 	))
 }

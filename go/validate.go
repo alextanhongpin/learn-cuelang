@@ -46,4 +46,14 @@ func main() {
 	fmt.Println("YAML", schema.Unify(value).Validate(
 		cue.Concrete(true),
 	))
+
+	// Unfortunately strings needs to be quoted.
+	value = ctx.CompileString(`
+	age: 13
+	name: john
+	hobby: ["reading", "coding"]
+	`)
+	fmt.Println("YAML", schema.Unify(value).Validate(
+		cue.Concrete(true),
+	))
 }
